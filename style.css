@@ -2,6 +2,17 @@
     font-size: 16px;
 }
 
+h2{
+    font-family: 'Poppins';font-size: 22px;
+}
+
+h4{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-size: 18px;
+    color: #AA1F24;
+    font-weight: bold;
+}
+
 .mainLogo {
     width: 10rem;
 }
@@ -28,4 +39,29 @@
 
 .cl-red {
     color: #AA1F24 !important;
+}
+
+.bg-grey{
+    background-color: #E1E1E1;
+}
+
+.mini-card {
+    position: relative;
+}
+
+.mini-card :hover.grid-img-hover{
+    opacity: 1;
+}
+
+.grid-img {
+    width: 100%;
+}
+
+.grid-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .2s ease-in-out ;
+    opacity: 0;
 }
