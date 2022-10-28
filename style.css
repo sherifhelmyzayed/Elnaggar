@@ -1,0 +1,31 @@
+*{
+    font-size: 16px;
+}
+
+.mainLogo {
+    width: 10rem;
+}
+
+.hero-image-1 {
+    background-image: url('./Assets/carousel1.png');
+    min-height: 600px;
+    max-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.hero-image-1 {
+    background-image: url('./Assets/carousel2.png');
+    min-height: 600px;
+    max-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.bg-red {
+    background-color: #AA1F24 !important;
+}
+
+.cl-red {
+    color: #AA1F24 !important;
+}
