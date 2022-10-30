@@ -65,3 +65,67 @@ h4{
     transition: all .2s ease-in-out ;
     opacity: 0;
 }
+
+
+
+.section-project {
+    background-image: url('./Assets/home/background-project.png');
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.section-project::after{
+    height: 100%;
+    width: 100%;
+    background-image: url('./Assets/home/background-project-overlay.png');
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.home-project-container {
+    flex-wrap: nowrap;
+    max-width: 300px;
+}
+
+
+.home-project-image{
+    position: relative;
+}
+
+.home-project-image img{
+    max-width: 287px;
+}
+
+.home-project-image .text{
+    padding: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+}
+
+.home-project-image h5{
+}
+
+.home-project-image p{
+}
+
+
+
+
+
+/* cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card.news {
+    width: 388px;
+}
