@@ -13,12 +13,21 @@ h4{
     font-weight: bold;
 }
 
+.form-group{
+    padding: 10px;
+}
+
+.input-focus-border-color {
+    color: #AA1F24;
+    background-color: #AA1F24;
+}
+
 .mainLogo {
     width: 10rem;
 }
 
 .hero-image-1 {
-    background-image: url('./Assets/carousel1.png');
+    background-image: url('./Assets/home/carousel1.png');
     min-height: 600px;
     max-height: 100vh;
     width: 100vw;
@@ -26,7 +35,7 @@ h4{
 }
 
 .hero-image-1 {
-    background-image: url('./Assets/carousel2.png');
+    background-image: url('./Assets/home/carousel2.png');
     min-height: 600px;
     max-height: 100vh;
     width: 100vw;
@@ -128,4 +137,13 @@ h4{
 
 .card.news {
     width: 388px;
+}
+
+
+
+.home-section-contact {
+    background-image: url('./Assets/home/contact.png');
+    height: 574px;
+    width: 100vw;
+    background-size: cover;
 }
