@@ -147,3 +147,27 @@ h4{
     width: 100vw;
     background-size: cover;
 }
+
+
+
+/********************* About Page *******************/
+
+.about-hero {
+    background-image: url('./Assets/about/about-cover.png');
+    height: 574px;
+    width: 100vw;
+    background-size: cover;
+}
+
+.about-hero ::after {
+    height: 100%;
+    width: 100%;
+    background-color: #ffff;
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.44;
+    z-index: -1;
+}
