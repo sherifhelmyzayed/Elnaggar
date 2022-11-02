@@ -171,3 +171,12 @@ h4{
     opacity: 0.44;
     z-index: -1;
 }
+
+.card-mission {
+    border-radius: 10px;
+    border: #AA1F24 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
