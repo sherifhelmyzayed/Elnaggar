@@ -205,3 +205,29 @@ h4{
     opacity: 0.8;
     text-align: center;
 }
+
+.about-section-ceo {
+    background-color: #F3F3F3;
+}
+
+.about-section-ceo .title {
+    text-align: center;
+    color: #AA1F24;
+    font-size: 28px;
+    font-family: 'Poppins';
+}
+
+.about-section-ceo .ceo-image {
+    width: 222px;
+    height: 222px;
+}
+
+.about-section-ceo .text-container {
+    border: #AA1F24 1px solid;
+    padding: 20px;
+}
+
+.about-section-ceo .signature {
+    align-self: flex-end;
+    text-align: center;
+}
