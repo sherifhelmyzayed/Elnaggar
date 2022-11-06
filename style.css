@@ -231,3 +231,15 @@ h4{
     align-self: flex-end;
     text-align: center;
 }
+
+
+
+
+/* SERVICES */
+
+.card.services {
+}
+
+.card.services .imgcard-img-top {
+    height: 244px;
+}
