@@ -250,3 +250,23 @@ h4{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+/* PROJECTS */
+
+.projects-unique p{
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.projects-unique span {
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.projects-sectors img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
