@@ -242,4 +242,11 @@ h4{
 
 .card.services .imgcard-img-top {
     height: 244px;
+
+    border-radius: 10px;
+    border: #AA1F24 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
