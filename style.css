@@ -314,3 +314,35 @@ h4{
     padding: 100px 10px 10px 10px;
     z-index: 2;
 }
+
+
+/* Media */
+
+.galleryNewsContainer {
+    position: relative;
+}
+
+#gallery {
+    transform: translateX(-30px);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+#gallery img {
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+#news {
+    position: absolute;
+    top: 0;
+    left: auto;
+    margin-left: auto;
+    transform: translateX(30px);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
