@@ -30,21 +30,136 @@ h4{
     width: 10rem;
 }
 
+.nav-item .active h2{
+    border-bottom: #AA1F24 1px solid;
+}
+
+.nav-item h2 {
+    padding-bottom: 5px;
+    margin: 0 15px;
+}
+
+.nav-icon {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    max-width: 100vw;
+    width: 473px;
+    height: 100vh;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    background-color: #F3F3F3;
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.5s ease-in-out ;
+}
+
+.sidebar .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #AA1F24;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar img {
+    height: 150px;
+    width: 250px;
+}
+
+.sidebar .sidebar-icon {
+    color: #AA1F24;
+    font-size: 30px;
+    width: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    overflow: hidden;
+    background-color: #838486;
+    opacity: 0.65;
+    transition: all 0.5s ease;
+}
+
 .hero-image-1 {
     background-image: url('./Assets/home/carousel1.png');
     min-height: 600px;
     max-height: 100vh;
     width: 100vw;
     background-size: cover;
+    z-index: -2;
 }
 
-.hero-image-1 {
+.hero-image-2 {
     background-image: url('./Assets/home/carousel2.png');
     min-height: 600px;
     max-height: 100vh;
     width: 100vw;
     background-size: cover;
 }
+
+.hero-image-1::after{
+    height: 100%;
+    width: 100%;
+    background-image: url('./Assets/home/background-project-overlay.png');
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.85;
+    z-index: 0;
+}
+
+.hero-image-2::after{
+    height: 100%;
+    width: 100%;
+    background-image: url('./Assets/home/background-project-overlay.png');
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.85;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 2
+}
+
+.hero-content h5{
+    font-family: 'Tahoma';
+    font-size: 22px;
+    color: #F3F3F3;
+}
+
+.hero-content p{
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #F3F3F3;
+    max-width: 800px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: #AA1F24;
+}
+
 
 .bg-red {
     background-color: #AA1F24 !important;
