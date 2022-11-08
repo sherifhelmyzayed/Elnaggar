@@ -15,6 +15,6 @@ const closeSideBar = () => {
     sidebar.style.opacity = 0;
     sidebar.style.zIndex = -5;
     
-    overlay.style.opacity = 0.5;
-    overlay.style.zIndex = -50;
+    overlay.style.opacity = 0;
+    overlay.style.zIndex = -5;
 }

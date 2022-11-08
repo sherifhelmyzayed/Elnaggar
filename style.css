@@ -55,7 +55,7 @@ h4{
     right: 0;
     background-color: #F3F3F3;
     z-index: 100;
-    opacity: 1;
+    opacity: -5;
     transition: all 0.5s ease-in-out ;
 }
 
@@ -87,10 +87,10 @@ h4{
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 50;
+    z-index: -5;
     overflow: hidden;
     background-color: #838486;
-    opacity: 0.65;
+    opacity: 0;
     transition: all 0.5s ease;
 }
 
