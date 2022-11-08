@@ -2,6 +2,23 @@
     font-size: 16px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #AA1F24;
+}
+
+a:hover {
+    color: #AA1F24;
+}
+
+a:active {
+    color: #AA1F24;
+}
+
 input {
     border-color: #AA1F24 !important;
     padding: 15px 15px !important;
@@ -294,6 +311,32 @@ h4{
 }
 
 
+footer {
+    background-image: url('./Assets/footer-back.png');
+    color: #F3F3F3;
+    height: 297px;
+}
+
+footer img {
+    width: 250px;
+}
+
+footer small {
+    font-size: 12px;
+}
+
+footer i {
+
+
+
+
+    color: #ffffff;
+    font-size: 25px;
+    width: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 
 
 
@@ -343,7 +386,6 @@ h4{
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0px 10px 0 rgba(0, 0, 0, 0.05);
-    
 }
 
 
