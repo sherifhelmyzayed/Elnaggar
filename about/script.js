@@ -115,3 +115,21 @@ function readMore4() {
         `
     }
 }
+
+
+
+const mainSuppliers = document.getElementById('main-suppliers')
+
+mainSuppliers.innerHTML = `
+    <div class="container text-center">
+    <h4>ABOUT US</h4>
+    <h2>Our Main Suppliers</h2>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+    <img src="../Assets/home/supplier1.png" alt="">
+    <img src="../Assets/home/supplier2.png" alt="">
+    <img src="../Assets/home/supplier3.png" alt="">
+    <img src="../Assets/home/supplier4.png" alt="">
+    </div>
+`

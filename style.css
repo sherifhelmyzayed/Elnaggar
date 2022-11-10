@@ -680,6 +680,7 @@ footer i {
     z-index: 2;
 
     position: relative;
+    cursor: pointer;
 }
 
 .client-feedback .carousel-indicators {
