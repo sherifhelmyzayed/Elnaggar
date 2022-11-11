@@ -11,20 +11,8 @@
     <link rel="stylesheet" href="../style.css">
     <title>Projects</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
-        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css"
-        integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
-        integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
 
 </head>
 
@@ -189,28 +177,200 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-1.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-1.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Water & Waste water Treatment</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(0)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Water & Waste water Treatment</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Pumps</li>
+                                <li>Cables</li>
+                                <li>impellers</li>
+                                <li>Compressors</li>
+                                <li>Valves</li>
+                                <li>Generators</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(0)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-2.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Electricity & Electric Supplies</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(1)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Electricity & Electric Supplies</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Gear Motors</li>
+                                <li>Cables</li>
+                                <li>Generators</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(1)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-3.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Oil, Gas & Petroleum Refining</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(2)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Oil, Gas & Petroleum Refining</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Pumps</li>
+                                <li>Cables</li>
+                                <li>impellers</li>
+                                <li>Compressors</li>
+                                <li>Valves</li>
+                                <li>Generators</li>
+                                <li>Heat Exchangers</li>
+                                <li>Mechanical Seal</li>
+                                <li>Klixons & Pedestals</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(2)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-4.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Chemicals & Fertilizer</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(3)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Chemicals & Fertilizer</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Mixers</li>
+                                <li>Compressors</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(3)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-5.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Sugar Packing Industry</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(4)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Sugar Packing Industry</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Packing Machines</li>
+                                <li>Knives</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(4)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-6.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Car Accessories Industry</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(5)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Chemicals & Fertilizer</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Roof boxes</li>
+                                <li>Roof Racks</li>
+                                <li>Car Accessories</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(5)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-7.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Other</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(6)>
+                                <p>Read More</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-card-text-hidden pt-5">
+                            <h2>Other</h2>
+                            <p class="cl-red">Scope of work</p>
+                            <ul>
+                                <li>Coupling</li>
+                                <li>Metric Hub</li>
+                                <li>Rollers</li>
+                                <li>Ball bearing</li>
+                                <li>Motors</li>
+                            </ul>
+                            <a class="cl-red d-flex" onclick=closeSectorCard(6)>
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-3">
-                    <img src="../Assets/projects/sector-2.png" alt="">
+                    <div class="project-card-sector">
+                        <img src="../Assets/projects/sector-8.png" alt="">
+                        <div class="project-card-text">
+                            <h2>Do You Want To Know More?</h2>
+                            <a class="cl-red d-flex" onclick=openSectorCard(6)>
+                                <p>Contact Us</p>
+                                <i class="far fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,6 +383,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
