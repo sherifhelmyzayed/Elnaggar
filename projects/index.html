@@ -31,7 +31,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../">
                 <img src="../Assets/logo.png" class="mainLogo" alt="ElNaggar">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,41 +41,81 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-auto gap-2">
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red active" aria-current="page" href="#"><i
-                                class="bi bi-house-fill me-2"></i>Home</a>
+                        <a class="nav-link cl-red " aria-current="page" href="../"><i class="bi bi-house-fill me-2"></i>
+                            <h2>Home</h2>
+                        </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="#"><i class="bi bi-people-fill me-2"></i>About</a>
+                        <a class="nav-link cl-red" href="../about"><i class="bi bi-people-fill me-2"></i>
+                            <h2>About</h2>
+                        </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="#"><i class="bi bi-people-fill me-2"></i>Services</a>
+                        <a class="nav-link cl-red" href="../services"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Services</h2>
+                        </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="#"><i class="bi bi-people-fill me-2"></i>Projects</a>
+                        <a class="nav-link cl-red active" href="../projects"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Projects</h2>
+                        </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="#"><i class="bi bi-people-fill me-2"></i>Media Center</a>
+                        <a class="nav-link cl-red" href="../Media"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Media Center</h2>
+                        </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="#"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
+                        <a class="nav-link cl-red" href="../contact"><i class="bi bi-telephone-fill me-2"></i>
+                            <h2>Contact</h2>
+                        </a>
                     </li>
-                    <li class="nav-item dropdown rounded">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i
-                                class="bi bi-person-fill me-2"></i>Profile</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Account</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red" href="#">
+                            <i class="nav-icon far fa-globe mt-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red" href="#">
+                            <i class="nav-icon far fa-bars mt-3" onclick=openSidebar()></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="sidebar text-center">
+        <i class="closeBtn far fa-times-circle" onclick=closeSideBar()></i>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <img src="../Assets/logo.png" alt="logo">
+        </div>
+        <div class="row">
+            <h2 class="cl-red">WORKING HOURS</h2>
+            <P>Sunday - Thursday: 9:00 - 16:30</P>
+            <p>Saturday: 10:00 - 13:00</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">Contact Us</h2>
+            <p>Tel: (+203) 4851778 / (+203) 4841778</p>
+            <p>Fax: (+203) 4851773</p>
+            <p>E-mail: administration@naggargroup.com</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">Head Quarters Address</h2>
+            <p>95, 26th July Avenue, Apt 803</p>
+            <p>Azarita, Alexandria, Egypt</p>
+        </div>
+        <a href="../contact/">
+            <button type="button" class="btn btn-primary btn-sm bg-red">Message Us</button>
+        </a>
+        <div class="row d-flex justify-content-center align-items-center py-5">
+            <i class="sidebar-icon fab fa-facebook"></i>
+            <i class="sidebar-icon fab fa-linkedin"></i>
+            <i class="sidebar-icon fab fa-instagram-square"></i>
+        </div>
+    </div>
+    <div class="page-overlay"></div>
 
 
 
@@ -98,25 +138,41 @@
     <section class="projects-unique py-5">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <p>The <span class="cl-red">combination of worldwide ocean transportation and logistics
-                            solutions.</span></p>
-                    <p>
-                        Our <span class="cl-red">vast knowledge from different Logistics segments</span> and our
-                        presence all over the Market give us a unique possibility to take a leading role in developing
-                        the industry.
-                    </p>
-                    <p>
-                        <span class="cl-red">We consider our employees to be our most important asset.</span> We believe
-                        that empowered employees in an innovative learning organisation are the company’s main
-                        competitive advantage
-                    </p>
-                    <p>
-                        Having three strong segments and a <span class="cl-red">flexible business model </span>with
-                        different market exposure make us less vulnerable in difficult times. For us, this balanced
-                        portfolio is risk management in
-                        practice.
-                    </p>
+                <div class="col-md-6 row project-text-container">
+                    <div class="border-right"></div>
+                    <div class="col-1 circle">1</div>
+                    <div class="col-11">
+                        <p>The <span class="cl-red">combination of worldwide ocean transportation and logistics
+                                solutions.</span>
+                        </p>
+                    </div>
+                    <div class="col-1 circle">2</div>
+                    <div class="col-11">
+                        <p>
+                            Our <span class="cl-red">vast knowledge from different Logistics segments</span> and our
+                            presence all over the Market give us a unique possibility to take a leading role in
+                            developing
+                            the industry.
+                        </p>
+                    </div>
+                    <div class="col-1 circle">3</div>
+                    <div class="col-11">
+                        <p>
+                            <span class="cl-red">We consider our employees to be our most important asset.</span> We
+                            believe
+                            that empowered employees in an innovative learning organisation are the company’s main
+                            competitive advantage
+                        </p>
+                    </div>
+                    <div class="col-1 circle">4</div>
+                    <div class="col-11">
+                        <p>
+                            Having three strong segments and a <span class="cl-red">flexible business model </span>with
+                            different market exposure make us less vulnerable in difficult times. For us, this balanced
+                            portfolio is risk management in
+                            practice.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
                     <img src="../Assets/projects/projects-1.png" alt="projects">
@@ -125,9 +181,9 @@
         </div>
     </section>
 
-    <h2 class="text-center">
+    <h3 class="text-center">
         Sectors of Industries Covered by Our Company
-    </h2>
+    </h3>
 
     <section class="projects-sectors ">
         <div class="container">

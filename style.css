@@ -747,12 +747,40 @@ footer i {
 
 .projects-unique p{
     font-family: 'Poppins';
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .projects-unique span {
     font-family: 'Poppins';
-    font-size: 22px;
+    font-size: 18px;
+}
+
+.projects-unique .circle {
+    background-color: #AA1F24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3F3F3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    align-self: center;
+    z-index: 2;
+}
+
+.projects-unique .project-text-container {
+    position: relative;
+}
+
+.projects-unique .border-right {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 80%;
+    border-left:#AA1F24 3px solid;
+    margin-left: 30px;
+    margin-top: 40px;
 }
 
 .projects-sectors img {
