@@ -468,7 +468,8 @@ Multiple Slider
 footer {
     background-image: url('./Assets/footer-back.png');
     color: #F3F3F3;
-    height: 297px;
+    min-height: 297px;
+    background-size: cover;
 }
 
 footer img {
@@ -503,6 +504,8 @@ footer i {
 .card.news {
     width: 388px;
     cursor: pointer;
+    margin-bottom: 20px;
+
 }
 
 .card.news .card-text{
@@ -525,6 +528,14 @@ footer i {
     padding: 1px 0;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 480px) {
+
+
+    .card.news {
+        width: 100%;
+    }
+  }
 
 .home-section-contact {
     background-image: url('./Assets/home/contact.png');
