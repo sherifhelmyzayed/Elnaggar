@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -248,30 +250,310 @@
                         <p>Flexible business model with different market exposure</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row home-project-container">
-                        <div class="home-project-image">
-                            <img src="./Assets/home/project-1.png" alt="project 1">
-                            <div class="text">
-                                <h5>Water & waste water treatment</h5>
-                                <p>Read More</p>
+                <div class="col-md-3 col-sm-6 offset-md-2 home-carousel-container-2">
+
+
+                    <!-- <div class="container text-center my-3">
+                        <div class="row mx-auto my-auto justify-content-center">
+                            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/CB997E/333333?text=1" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 1</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/B7B7A4/333333?text=4" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img src="https://via.placeholder.com/700x500.png/6B705C/eeeeee?text=6" class="img-fluid">
+                                                </div>
+                                                <div class="card-img-overlay">Slide 6</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="home-project-image">
-                            <img src="./Assets/home/project-2.png" alt="project 2">
-                            <div class="text">
-                                <h5>Water & waste water treatment</h5>
-                                <p>Read More</p>
+                        </div>		
+                    </div> -->
+
+
+
+
+
+
+                     <div class="carousel-container">
+                        <div id="carouselFeedback" class="carousel slide multi-item-carousel" data-bs-ride="false">
+
+                             <div class="carousel-inner">
+                                <div class="carousel-item active">
+
+
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-1.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Water & Waste water Treatment</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(0)>
+                                                <p class="cl-red">Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Water & Waste water Treatment</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Pumps</li>
+                                                <li>Cables</li>
+                                                <li>impellers</li>
+                                                <li>Compressors</li>
+                                                <li>Valves</li>
+                                                <li>Generators</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(0)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="carousel-item">
+
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-2.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Electricity & Electric Supplies</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(1)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Electricity & Electric Supplies</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Gear Motors</li>
+                                                <li>Cables</li>
+                                                <li>Generators</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(1)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-3.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Oil, Gas & Petroleum Refining</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(2)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Oil, Gas & Petroleum Refining</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Pumps</li>
+                                                <li>Cables</li>
+                                                <li>impellers</li>
+                                                <li>Compressors</li>
+                                                <li>Valves</li>
+                                                <li>Generators</li>
+                                                <li>Heat Exchangers</li>
+                                                <li>Mechanical Seal</li>
+                                                <li>Klixons & Pedestals</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(2)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-4.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Chemicals & Fertilizer</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(3)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Chemicals & Fertilizer</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Mixers</li>
+                                                <li>Compressors</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(3)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-5.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Sugar Packing Industry</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(4)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Sugar Packing Industry</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Packing Machines</li>
+                                                <li>Knives</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(4)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-6.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Car Accessories Industry</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(5)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Chemicals & Fertilizer</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Roof boxes</li>
+                                                <li>Roof Racks</li>
+                                                <li>Car Accessories</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(5)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-7.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Other</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(6)>
+                                                <p>Read More</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="project-card-text-hidden pt-5">
+                                            <h2>Other</h2>
+                                            <p class="cl-red">Scope of work</p>
+                                            <ul>
+                                                <li>Coupling</li>
+                                                <li>Metric Hub</li>
+                                                <li>Rollers</li>
+                                                <li>Ball bearing</li>
+                                                <li>Motors</li>
+                                            </ul>
+                                            <a class="cl-red d-flex" onclick=closeSectorCard(6)>
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="project-card-sector">
+                                        <img src="../Assets/projects/sector-8.png" alt="">
+                                        <div class="project-card-text">
+                                            <h2>Do You Want To Know More?</h2>
+                                            <a class="cl-red d-flex" onclick=openSectorCard(6)>
+                                                <p>Contact Us</p>
+                                                <i class="far fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="carousel-inner">
+                                
+
                             </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeedback"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFeedback"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="home-project-image">
-                            <img src="./Assets/home/project-3.png" alt="project 3">
-                            <div class="text">
-                                <h5>Water & waste water treatment</h5>
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
             <div class="row ">
@@ -298,9 +580,10 @@
                         <img class="card-img-top" src="./Assets/home/news-1.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Central Bank of Egypt approves procedures facilitating import/export
-                                transactions: Sources</p>
+                                transactions</p>
                             <p class="card-text-date">September 20, 2022</p>
                             <div class="row d-flex justify-content-end">
+                                <a href="./Media/"></a>
                                 <p class="card-action">Read More</p>
                             </div>
                         </div>
@@ -309,7 +592,7 @@
 
                 <div class="card-container col-md-4">
                     <div class="card news">
-                        <img class="card-img-top" src="./Assets/home/news-1.png" alt="Card image cap">
+                        <img class="card-img-top" src="./Assets/home/news-2.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Egypt extends deadline to register for cargo tracking system at
                                 airports to 1 Jan. 2023</p>
@@ -323,7 +606,7 @@
 
                 <div class="card-container col-md-4">
                     <div class="card news">
-                        <img class="card-img-top" src="./Assets/home/news-1.png" alt="Card image cap">
+                        <img class="card-img-top" src="./Assets/home/news-3.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Finance minister unveils regulations on reduced customs tariffs</p>
                             <p class="card-text-date">September 4, 2022</p>
