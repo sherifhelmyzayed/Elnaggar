@@ -1030,8 +1030,9 @@ footer i {
 .contact-team {
     background-image: url('../Assets/contact/team-bg.png');
     width: 100vw;
-    height: 522px;
+    min-height: 522px;
     background-size: cover;
+    padding-bottom: 20px;
 }
 
 .team-card {
