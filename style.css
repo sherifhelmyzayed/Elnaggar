@@ -583,6 +583,14 @@ footer i {
     z-index: 0;
 }
 
+.about-section-about img {
+    width: 100% !important;
+}
+
+.aaa {
+    width: 10px;
+}
+
 #readMoreBtn {
     cursor: pointer;
     transition: all 0.5s ease;
@@ -661,6 +669,18 @@ footer i {
     background-size: cover;
     margin-bottom: 250px;
 }
+
+@media screen and (max-width: 480px) {
+
+
+    .strategy {
+        margin-bottom: 800px;
+    }
+
+    .strategy .cards-container {
+        margin-top: 50px !important;
+    }
+  }
 
 .strategy::after{
     height: 100%;

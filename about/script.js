@@ -116,6 +116,16 @@ function readMore4() {
     }
 }
 
+function readMore5() {
+
+    const moreText5 = document.getElementById("more5");
+    const btnText5 = document.getElementById("readMoreBtn5");
+
+    moreText5.style.display = "inline";
+    btnText5.style.display = "none";
+
+}
+
 
 
 const mainSuppliers = document.getElementById('main-suppliers')
