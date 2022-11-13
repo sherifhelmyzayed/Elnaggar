@@ -461,6 +461,23 @@ Multiple Slider
 }
 
 
+.main-suppliers .logo-wrapper {
+    max-width: 100vw;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.main-suppliers .logo-wrapper img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.main-suppliers .logo-wrapper img:hover {
+    filter: grayscale(0%);
+}
+
+
 footer {
     background-image: url('./Assets/footer-back.png');
     color: #F3F3F3;
