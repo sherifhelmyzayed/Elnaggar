@@ -793,7 +793,7 @@ footer i {
 
 
 
-.projects-sectors .project-card-sector {
+.project-card-sector {
     width: 100%;
     margin-bottom: 20px;
     position: relative;
@@ -805,7 +805,7 @@ footer i {
     object-fit: cover;
 }
 
-.projects-sectors .project-card-text {
+.project-card-text {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -820,11 +820,11 @@ footer i {
 
 }
 
-.projects-sectors .project-card-text i {
+.project-card-text i {
     margin: 5px 0 0 5px;
 }
 
-.projects-sectors .project-card-text a {
+.project-card-text a {
     cursor: pointer;
 }
 
@@ -847,14 +847,14 @@ footer i {
     opacity: 0;
 }
 
-.projects-sectors .project-card-text-hidden a {
+.project-card-text-hidden a {
     cursor: pointer;
     position: absolute;
     top: 5px;
     right: 5px;
 }
 
-.projects-sectors .project-card-text-hidden i {
+.project-card-text-hidden i {
 
     font-size: 20px;
 }
