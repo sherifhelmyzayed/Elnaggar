@@ -296,19 +296,13 @@ const setModal = (id) => {
 
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
-  });
-  // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-  const valueModal = params.modal;
-  const valueID = params.id
-  
+});
+const valueModal = params.modal;
+const valueID = params.id
 
 
-//   if (valueModal === 'true') {
-//     setModal(valueID);
-
-//     const modalEl = document.getElementById('exampleModal')
-//     console.log(modalEl);
-//     modalEl.show()
-//   }
-  
-  // "some_value"
+if (valueModal === 'true') {
+    setModal(parseInt(valueID) + 1);
+    const modalEl = document.getElementById('exampleModal')
+    new bootstrap.Modal(modalEl).show();
+}
