@@ -2,6 +2,20 @@
     font-size: 16px;
 }
 
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 10px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #AA1F24 !important;
+    border-radius: 10px !important;
+    color: #F3F3F3 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+}
+
 .splide__pagination__page {
     margin-left: 10px !important;
     margin-right: 10px !important;
