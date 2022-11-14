@@ -271,6 +271,10 @@ h4{
     color: #AA1F24 !important;
 }
 
+.cl-darkgrey {
+    color: #4A4A4A !important; 
+}
+
 .bg-grey{
     background-color: #E1E1E1;
 }
@@ -734,10 +738,10 @@ footer i {
     border: #AA1F24 2px solid;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100%;
-    padding: 5px 10px;
+    padding: 10px 10px 5px 10px;
 }
 
 .card-mission .main {
@@ -751,6 +755,12 @@ footer i {
     margin: 0 5px 10px 0;
 }
 
+.card-mission p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #4A4A4A;
+}
+
 .strategy {
     position: relative;
     display: flex;
@@ -760,7 +770,6 @@ footer i {
     flex-direction: column;
     background-image: url('./Assets/about/about-img-3.png');
     background-size: cover;
-    margin-bottom: 250px;
 }
 
 @media screen and (max-width: 480px) {
@@ -770,7 +779,7 @@ footer i {
         margin-bottom: 800px;
     }
 
-    .strategy .cards-container {
+    .strategy-wrapper .cards-container {
         margin-top: 50px !important;
     }
   }
@@ -792,24 +801,32 @@ footer i {
     text-align: center;
     font-size: 42px;
 }
-.strategy .card {
+.stategy-wrapper .card {
     border-radius: 20px;
     width: 100%;
     padding: 15px;
+    min-height: 267px;
 }
 
-.strategy .cards-container {
-    margin-top: 250px;
+.stategy-wrapper .cards-container {
+    margin: -100px 0 0 0 !important;
     width: 100%;
 }
 
-.strategy .card-text {
-    font-size: 16px;
+.stategy-wrapper .card-text {
+    font-size: 22px !important;
+    font-weight: 800;
     font-family: 'Poppins';
     color: #231F20;
     opacity: 0.8;
     text-align: center;
 }
+
+.stategy-wrapper img {
+    height: 70px;
+}
+
+.stategy-wrapper {height: auto;}
 
 .about-section-ceo {
     background-color: #F3F3F3;
@@ -833,6 +850,7 @@ footer i {
 .about-section-ceo .ceo-image {
     width: 222px;
     height: 222px;
+    margin-top: -100px;
 }
 
 .about-section-ceo .text-container {
