@@ -303,12 +303,12 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   
 
 
-  if (valueModal === 'true') {
-    setModal(valueID);
+//   if (valueModal === 'true') {
+//     setModal(valueID);
 
-    const modalEl = document.getElementById('exampleModal')
-    console.log(modalEl);
-    modalEl.show()
-  }
+//     const modalEl = document.getElementById('exampleModal')
+//     console.log(modalEl);
+//     modalEl.show()
+//   }
   
   // "some_value"

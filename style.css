@@ -22,6 +22,11 @@
     display: none;
 }
 
+navbar {
+    position: fixed;
+    top: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -130,6 +135,17 @@ h4{
     transition: all 0.5s ease-in-out ;
 }
 
+.sidebar .cl-red {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.sidebar button {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 900;
+}
+
 .sidebar .closeBtn {
     position: absolute;
     top: 10px;
@@ -150,6 +166,10 @@ h4{
     width: auto;
     margin: 0 10px;
     cursor: pointer;
+}
+
+.sidebar p {
+    font-size: 14px;
 }
 
 .page-overlay {
@@ -229,6 +249,7 @@ h4{
     padding: 15px 30px;
     border-radius: 10px;
     border: #AA1F24;
+    font-weight: 700;
 }
 
 
@@ -554,6 +575,7 @@ footer i {
     width: 388px;
     cursor: pointer;
     margin-bottom: 20px;
+    border: none;
 
 }
 
@@ -574,8 +596,9 @@ footer i {
     font-size: 16px;
     border-bottom: #AA1F24 1px solid;
     width: auto;
-    padding: 1px 0;
+    padding: 0px 0;
     margin-right: 10px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 480px) {
