@@ -814,6 +814,8 @@ footer i {
     color: white;
     text-align: center;
     font-size: 42px;
+    margin-top: 120px;
+
 }
 .stategy-wrapper .card {
     border-radius: 20px;
@@ -838,6 +840,10 @@ footer i {
 
 .stategy-wrapper img {
     height: 70px;
+}
+
+.stategy-wrapper p {
+    text-align: center;
 }
 
 .stategy-wrapper {height: auto;}
@@ -1016,7 +1022,8 @@ footer i {
 
 .card.services i {
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 15px !important;
+    font-size: 20px;
 }
 
 .card.services .imgcard-img-top {
@@ -1038,6 +1045,8 @@ footer i {
 .projects-unique p{
     font-family: 'Poppins';
     font-size: 18px;
+    font-weight: 800;
+
 }
 
 .projects-unique span {
@@ -1054,8 +1063,8 @@ footer i {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    font-size: 20px;
-    align-self: center;
+    font-size: 22px;
+    font-weight: 800;
     z-index: 2;
 }
 
@@ -1067,10 +1076,20 @@ footer i {
     position: absolute;
     left: 0;
     width: 20px;
-    height: 80%;
+    height: 75%;
     border-left:#AA1F24 3px solid;
-    margin-left: 30px;
+    margin-left: 42px;
     margin-top: 40px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+
+
+
+    .border-right {
+        height: 68% !important;
+    }
 }
 
 

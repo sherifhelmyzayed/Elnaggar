@@ -40,7 +40,6 @@ const openSectorCard = (ev) => {
 }
 
 const closeSectorCard = (ev) => {
-    console.log();
     const container = event.target.parentElement.parentElement.parentElement;
 
 
@@ -54,20 +53,15 @@ const closeSectorCard = (ev) => {
 
 }
 
+const hoverLeave = () => {
+    const container = event.target;
 
-// Multiple Slider
+    const textEl = container.getElementsByClassName('project-card-text')[0]
+    textEl.style.opacity = 1
+    textEl.style.zIndex = 1
 
-// let items = document.querySelectorAll('.carousel .carousel-item')
-// 		items.forEach((el) => {
-// 			const minPerSlide = 2
-// 			let next = el.nextElementSibling
-// 			for (var i=1; i<minPerSlide; i++) {
-// 				if (!next) {
-//             // wrap carousel by using first child
-//             next = items[0]
-//         }
-//         let cloneChild = next.cloneNode(true)
-//         el.appendChild(cloneChild.children[0])
-//         next = next.nextElementSibling
-//     }
-// })
+    const hiddenEl = container.getElementsByClassName('project-card-text-hidden')[0]
+    hiddenEl.style.opacity = 0
+    hiddenEl.style.zIndex = -1
+
+}
