@@ -71,9 +71,20 @@ a:active {
     background-color: #AA1F24 !important;
 }
 
+
 .btn-outline-primary {
-    color: #242424 !important;
+    color: #AA1F24;
 }
+
+.btn-outline-primary:hover {
+    color: #4A4A4A !important;
+}
+
+
+
+/* .btn-outline-primary {
+    color: #242424 !important;
+} */
 
 input {
     border-color: #AA1F24 !important;
@@ -615,7 +626,7 @@ footer i {
     cursor: pointer;
     margin-bottom: 20px;
     border: none;
-
+    height: 100%;
 }
 
 .card.news .card-text{
@@ -638,6 +649,10 @@ footer i {
     padding: 0px 0;
     margin-right: 10px;
     font-weight: 500;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -1208,6 +1223,7 @@ footer i {
 
 .galleryNewsContainer {
     position: relative;
+    padding: 30px 0;
 }
 
 #gallery {
