@@ -46,10 +46,6 @@
     display: none;
 }
 
-navbar {
-    position: fixed;
-    top: 0;
-}
 
 a {
     color: inherit;
@@ -77,7 +73,7 @@ a:active {
 }
 
 .btn-outline-primary:hover {
-    color: #4A4A4A !important;
+    color: #b6b6b6 !important;
 }
 
 
@@ -138,16 +134,19 @@ h4{
 }
 
 .mainLogo {
-    width: 10rem;
+    width: 8rem;
+    margin-left: 50px;
 }
 
 .nav-item .active h2{
     border-bottom: #AA1F24 1px solid;
+    font-weight: 600;
 }
 
 .nav-item h2 {
     padding-bottom: 5px;
     margin: 0 15px;
+    font-size: 20px;
 }
 
 .nav-icon {
@@ -155,6 +154,7 @@ h4{
     width: 100%;
     font-size: 20px;
 }
+
 
 .sidebar {
     position: fixed;
@@ -192,14 +192,24 @@ h4{
 
 .sidebar img {
     height: 150px;
-    width: 250px;
+    width: 200px;
+    height: 140px;
+    margin-bottom: 20px;
 }
 
 .sidebar .sidebar-icon {
     color: #AA1F24;
     font-size: 30px;
-    width: auto;
-    margin: 0 10px;
+    width: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-icon:hover {
+    color: #838486;
+    font-size: 30px;
+    width: 15px;
+    margin: 0 5px;
     cursor: pointer;
 }
 
@@ -284,7 +294,7 @@ h4{
     padding: 15px 30px;
     border-radius: 10px;
     border: #AA1F24;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -324,6 +334,14 @@ h4{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.mini-card h2 {
+    font-weight: 700 !important;
+}
+
+.mini-card a {
+    margin-top: 20px !important;
 }
 
 .mini-card .card-main img {
@@ -593,23 +611,40 @@ footer {
 }
 
 footer img {
-    width: 250px;
+    width: 180px;
+    margin-bottom: 30px;
 }
 
 footer small {
-    font-size: 12px;
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 18px;
 }
 
 footer i {
-
-
-
-
     color: #ffffff;
     font-size: 25px;
     width: auto;
     margin: 0 10px;
     cursor: pointer;
+}
+
+footer i:hover {
+    color: #AA1F24;
+}
+
+footer .icon-small i {
+    color: #ffffff;
+    font-size: 14px;
+    width: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer .icon-small small {
+margin-top: 10px;
 }
 
 
@@ -992,6 +1027,8 @@ footer i {
 
     position: relative;
     cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .client-feedback .carousel-indicators {
@@ -1127,8 +1164,8 @@ footer i {
     bottom: 20px;
     left: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
     padding: 10px;
     background-color: rgba(243, 243, 243, 0.7);
@@ -1224,6 +1261,10 @@ footer i {
 .galleryNewsContainer {
     position: relative;
     padding: 30px 0;
+}
+
+.galleryNewsContainer .border-reduce {
+    border-radius: 20px;
 }
 
 #gallery {

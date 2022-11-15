@@ -6,7 +6,7 @@ overlay = document.getElementsByClassName('page-overlay')[0];
 const openSidebar = () => {
     sidebar.style.right = '0px';
     sidebar.style.opacity = 1;
-    sidebar.style.zIndex = 100;
+    sidebar.style.zIndex = 10000;
 
     overlay.style.opacity = 0.65;
     overlay.style.zIndex = 50;

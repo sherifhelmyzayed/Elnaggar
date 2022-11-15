@@ -125,3 +125,28 @@ function readMore5() {
     btnText5.style.display = "none";
 
 }
+
+const modal1 = `
+<img src="../Assets/about/feedback1.jpg" alt="">
+`
+
+const modal2 = `
+<img src="../Assets/about/feedback-2.png" alt="">
+`
+
+const setModal = (id) => {
+
+    const modalContent = document.getElementById('modal-content');
+
+
+
+    if (id === 1) {
+        modalContent.innerHTML = modal1
+    }
+
+    if (id === 2) {
+        modalContent.innerHTML = modal2
+    }
+
+    return
+}

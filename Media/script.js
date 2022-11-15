@@ -29,7 +29,17 @@ const showNews = ()=> {
 const hideNews = ()=> {
     news.style.opacity = 0;
     news.style.transform = "translateX(40px)";
-    news.style.zIndex = 0;
+    news.style.zIndex = -1;
 }
 
 showGallery()
+
+
+const setModal = (id) => {
+    console.log(id);
+    const modalContent = document.getElementById('modal-content');
+    modalContent.innerHTML = `
+    <img class="border-reduce" src="../Assets/media/l-media-${id}.png" alt="">
+    `
+    return
+}
