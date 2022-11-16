@@ -127,7 +127,11 @@ function readMore5() {
 }
 
 const modal1 = `
-<img src="../Assets/about/feedback1.jpg" alt="">
+<video width="100%" height="800px" controls>
+  <source src="../Assets/about/video.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
 `
 
 const modal2 = `
@@ -150,3 +154,14 @@ const setModal = (id) => {
 
     return
 }
+
+
+
+const modal = document.getElementById('exampleModal');
+modal.addEventListener('hide.bs.modal', function (event) { 
+    const modalContent = document.getElementById('modal-content');
+
+    modalContent.innerHTML = ""
+    console.log(modalContent);
+
+ })

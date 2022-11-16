@@ -2,7 +2,7 @@ const modalContent = document.getElementById('modal-content');
 
 const modal1 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-1.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
@@ -53,7 +53,7 @@ const modal1 = `
 
 const modal2 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-2.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
@@ -70,7 +70,7 @@ const modal2 = `
 
 const modal3 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-3.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
@@ -90,7 +90,7 @@ const modal3 = `
 
 const modal4 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-4.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
@@ -129,7 +129,7 @@ const modal4 = `
 
 const modal5 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-5.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
@@ -149,7 +149,7 @@ const modal5 = `
 
 const modal6 = `
 <div class="modal-body" id="modal-body">
-<i class="closeBtn far fa-times-circle" onclick=closeModal()></i>
+<i class="closeBtn far fa-times-circle" data-bs-dismiss="modal"></i>
 <img class="modal-background" src="../Assets/services/l-service-6.png" alt="">
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
