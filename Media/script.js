@@ -2,13 +2,10 @@ const gallery = document.getElementById('gallery');
 const news = document.getElementById('news');
 
 
-console.log(gallery);
-
-
 const showGallery = () => {
     gallery.style.opacity = 1;
     gallery.style.transform = "translateX(0px)";
-    gallery.style.zIndex = 1;
+    gallery.style.zIndex = 1;    
     hideNews();
 }
 

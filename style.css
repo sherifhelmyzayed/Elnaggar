@@ -87,7 +87,7 @@ a:active {
 }
 
 .btn-outline-primary:hover {
-    color: #b6b6b6 !important;
+    color: #a93a3e !important;
 }
 
 
@@ -327,9 +327,31 @@ h4{
 .btn {
     padding: 15px 30px;
     border-radius: 10px;
-    border: #AA1F24;
+    border: #AA1F24 1px solid;
     font-weight: 500;
 }
+
+.wide .btn {
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    border: #AA1F24 1px solid;
+
+}
+
+.btn-outline-primary {
+    border: #AA1F24 1px solid !important;
+
+}
+
+.btn-outline-primary:hover {
+    border: #AA1F24 1px solid !important;
+
+}
+
 
 
 .bg-red {
@@ -1237,86 +1259,6 @@ margin-top: 10px;
 
 
 
-/* .mini-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0px 10px 0 rgba(0, 0, 0, 0.05);
-
-
-    position: relative;
-    min-height: 180px;
-    cursor: pointer;
-}
-
-.mini-card .card-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.mini-card h2 {
-    font-weight: 700 !important;
-    margin-bottom: 0px !important;
-}
-
-.mini-card a {
-    margin-top: 20px !important;
-}
-
-.mini-card .card-main img {
-    width: 100px;
-    height: 100px;
-    padding: 15px;
-}
-
-.mini-card .border-down {
-    width: 100px;
-    border-bottom:#AA1F24 1px solid;
-    margin-top: 5px;
-}
-
-.mini-card .card-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffe0;
-    opacity: 0;
-    z-index: 3;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    transition: all 0.5s ease;
-}
-
-.mini-card .card-hover a {
-    font-weight: 600;
-}
-
-.mini-card .card-hover i {
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: 0 !important;
-    margin-left: 15px !important;
-}
-
-.mini-card :hover.card-hover{
-    opacity: 1;
-    z-index: 3;
-} 
-*/
-
-
-
-
 /* PROJECTS */
 
 .projects-unique p{
@@ -1519,6 +1461,7 @@ margin-top: 10px;
 .galleryNewsContainer {
     position: relative;
     padding: 30px 0;
+    height: auto;
 }
 
 .galleryNewsContainer .border-reduce {
@@ -1548,4 +1491,8 @@ margin-top: 10px;
     opacity: 0;
     z-index: -1;
     transition: all 0.5s ease-in-out;
+}
+
+.media-modal .modal-content {
+    background-color: rgba(0, 0, 0, 0.0);
 }
