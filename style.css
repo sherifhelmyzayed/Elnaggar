@@ -1101,6 +1101,10 @@ margin-top: 10px;
     max-width: 1080px;
 }
 
+.intro h2{
+    font-weight: 700 !important;
+}
+
 .intro h3 {
     font-size: 28px;
     font-weight: 700 !important;
