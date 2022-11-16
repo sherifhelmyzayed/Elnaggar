@@ -1097,6 +1097,20 @@ margin-top: 10px;
 
 /* SERVICES */
 
+.intro {
+    max-width: 1080px;
+}
+
+.intro h3 {
+    font-size: 28px;
+    font-weight: 700 !important;
+    font-family: 'Poppins';
+}
+.intro p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
 .modal-body {
     padding: 0;
 }
