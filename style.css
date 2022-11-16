@@ -1119,14 +1119,22 @@ margin-top: 10px;
     border-radius: 15px;
 }
 
+.card.services h2 {
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+}
+
 .card.services a {
+    font-weight: 600;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .card.services i {
-    margin-top: 5px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 0 !important;
     margin-left: 15px !important;
-    font-size: 20px;
 }
 
 .card.services .imgcard-img-top {
@@ -1139,6 +1147,154 @@ margin-top: 10px;
     justify-content: center;
     align-items: center;
 }
+
+.card.services .svg {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.modal-services {
+    margin: 35px 0;
+}
+
+.modal-services .svg {
+    width: 35px;
+    margin-right: 20px;
+}
+
+.modal-services h2 {
+    font-size: 34px;
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+}
+
+.modal-ul ul {
+    list-style: none;
+    padding-left: 70px;
+}
+
+.modal-ul ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #AA1F24; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.modal-ul li {
+    font-size: 26px;
+    color: #636363;
+    font-family: 'Poppins';
+    margin: 10px;
+}
+
+.modal-ul p {
+    font-size: 22px;
+    color: #838486;
+    font-family: 'Poppins';
+    font-weight: 300 !important;
+    margin: 0px 0 15px 20px;
+}
+
+.modal-text {
+    padding: 50px;
+}
+
+.modal-text p {
+    font-size: 26px;
+    color: #838486;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.modal-body .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+/* .mini-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0px 10px 0 rgba(0, 0, 0, 0.05);
+
+
+    position: relative;
+    min-height: 180px;
+    cursor: pointer;
+}
+
+.mini-card .card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mini-card h2 {
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+}
+
+.mini-card a {
+    margin-top: 20px !important;
+}
+
+.mini-card .card-main img {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+.mini-card .border-down {
+    width: 100px;
+    border-bottom:#AA1F24 1px solid;
+    margin-top: 5px;
+}
+
+.mini-card .card-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffe0;
+    opacity: 0;
+    z-index: 3;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all 0.5s ease;
+}
+
+.mini-card .card-hover a {
+    font-weight: 600;
+}
+
+.mini-card .card-hover i {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 0 !important;
+    margin-left: 15px !important;
+}
+
+.mini-card :hover.card-hover{
+    opacity: 1;
+    z-index: 3;
+} 
+*/
 
 
 
