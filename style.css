@@ -850,7 +850,7 @@ margin-top: 10px;
     justify-content: start;
     align-items: center;
     height: 100%;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .card-mission .main {
@@ -864,9 +864,15 @@ margin-top: 10px;
     margin: 0 5px 10px 0;
 }
 
-.card-mission p {
+.card-mission.large p {
     font-size: 18px;
     margin-top: 5px;
+    color: #4A4A4A;
+}
+
+.card-mission.small p {
+    font-size: 15px;
+    margin-top: 0px;
     color: #4A4A4A;
 }
 
@@ -1018,7 +1024,6 @@ margin-top: 10px;
 
 .accordion button {
     background-color: #f3f3f3;
-    border-radius: 50px;
     margin: 20px 0;
 }
 .accordion-flush {
@@ -1111,6 +1116,7 @@ margin-top: 10px;
 
 .card.services {
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 
 .card.services a {
