@@ -2,6 +2,20 @@
     font-size: 16px;
 }
 
+.underline-center{
+    border-bottom: #AA1F24 1px solid;
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.underline-center-white {
+    border-bottom: #fcfcfc 1px solid;
+    width: 60px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
     border-radius: 10px !important;
 }
@@ -115,9 +129,16 @@ h4{
     font-family: 'Tahoma'; 
     font-size: 18px;
     color: #AA1F24;
-    font-weight: bold;
+    font-weight: 500;
     margin: 20px 0;
+    display: relative;
+}
 
+.underline-center{
+    border-bottom: #AA1F24 1px solid;
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 15px;
 }
 
 .form-group{
@@ -153,6 +174,11 @@ h4{
     height: 100%;
     width: 100%;
     font-size: 20px;
+    cursor: pointer !important;
+}
+
+.nav-icon.fa-bars {
+    font-size: 25px;
 }
 
 
@@ -178,7 +204,8 @@ h4{
 .sidebar button {
     padding-left: 80px;
     padding-right: 80px;
-    font-weight: 900;
+    font-weight: 500;
+    margin-top: 30px;
 }
 
 .sidebar .closeBtn {
@@ -215,6 +242,13 @@ h4{
 
 .sidebar p {
     font-size: 14px;
+    margin: 1px 0;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 35px 0 15px 0 !important;
 }
 
 .page-overlay {
@@ -338,6 +372,7 @@ h4{
 
 .mini-card h2 {
     font-weight: 700 !important;
+    margin-bottom: 0px !important;
 }
 
 .mini-card a {
@@ -345,26 +380,25 @@ h4{
 }
 
 .mini-card .card-main img {
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     padding: 15px;
 }
 
 .mini-card .border-down {
     width: 100px;
     border-bottom:#AA1F24 1px solid;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .mini-card .card-hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #ffffffe0;
     opacity: 0;
     z-index: 3;
     border-radius: 10px;
-
 
     display: flex;
     justify-content: center;
@@ -372,6 +406,17 @@ h4{
     flex-direction: column;
 
     transition: all 0.5s ease;
+}
+
+.mini-card .card-hover a {
+    font-weight: 600;
+}
+
+.mini-card .card-hover i {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 0 !important;
+    margin-left: 15px !important;
 }
 
 .mini-card :hover.card-hover{
@@ -1159,6 +1204,26 @@ margin-top: 10px;
     object-fit: cover;
 }
 
+.project-card-sector h2 {
+    font-weight: 600;
+}
+
+.project-card-sector p {
+    font-weight: 600;
+}
+
+.project-card-sector i {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: -2px !important;
+    margin-left: 15px !important;
+}
+
+
+.project-card-sector .project-card-text-hidden p {
+    font-size: 20px;
+}
+
 .project-card-text {
     position: absolute;
     bottom: 20px;
@@ -1184,7 +1249,6 @@ margin-top: 10px;
 
 .project-card-sector .project-card-text-hidden {
     position: absolute;
-    padding-top: 20px;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -1192,7 +1256,7 @@ margin-top: 10px;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 15px;
     background-color: rgba(243, 243, 243, 0.7);
     width: 100%;
     z-index: -1;
@@ -1212,6 +1276,20 @@ margin-top: 10px;
 
     font-size: 20px;
 }
+
+.project-card-text-hidden ul {
+    list-style: none;
+    padding-left: 17px;
+}
+
+.project-card-text-hidden ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 
 
 

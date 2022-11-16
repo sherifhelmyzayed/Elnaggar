@@ -65,3 +65,8 @@ const hoverLeave = () => {
     hiddenEl.style.zIndex = -1
 
 }
+
+
+const toggleLang = () => {
+    return
+}
