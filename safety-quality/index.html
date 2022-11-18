@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand" href="../">
                 <img src="../Assets/logo.png" class="mainLogo" alt="ElNaggar">
@@ -32,13 +32,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-auto gap-2">
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red " aria-current="page" href="../"><i class="bi bi-house-fill me-2"></i>
+                        <a class="nav-link cl-red" aria-current="page" href="../"><i
+                                class="bi bi-house-fill me-2"></i>
                             <h2>Home</h2>
                         </a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link cl-red" href="../about"><i class="bi bi-people-fill me-2"></i>
-                            <h2>About</h2>
+                        <a class="nav-link cl-red " href="../about"><i class="bi bi-people-fill me-2"></i>
+                            <h2>About Us</h2>
                         </a>
                     </li>
                     <li class="nav-item rounded">
@@ -58,17 +59,17 @@
                     </li>
                     <li class="nav-item rounded">
                         <a class="nav-link cl-red" href="../contact"><i class="bi bi-telephone-fill me-2"></i>
-                            <h2>Contact</h2>
+                            <h2>Contact Us</h2>
                         </a>
                     </li>
                     <li class="nav-item rounded d-flex justify-content-center align-items-center">
-                        <a class="nav-link cl-red" href="#">
-                            <i class="nav-icon far fa-globe mt-3"></i>
+                        <a class="nav-link cl-red">
+                            <img src="../Assets/bars.svg" class="nav-icon far fa-bars mt-3" alt="bars" onclick=openSidebar()>
                         </a>
                     </li>
                     <li class="nav-item rounded d-flex justify-content-center align-items-center">
-                        <a class="nav-link cl-red" href="#">
-                            <i class="nav-icon far fa-bars mt-3" onclick=openSidebar()></i>
+                        <a class="nav-link cl-red">
+                            <i class="nav-icon far fa-globe mt-3" onclick=toggleLang()></i>
                         </a>
                     </li>
                 </ul>
@@ -87,23 +88,23 @@
             <p>Saturday: 10:00 - 13:00</p>
         </div>
         <div class="row">
-            <h2 class="cl-red">Contact Us</h2>
+            <h2 class="cl-red">CONTACT US</h2>
             <p>Tel: (+203) 4851778 / (+203) 4841778</p>
             <p>Fax: (+203) 4851773</p>
             <p>E-mail: administration@naggargroup.com</p>
         </div>
         <div class="row">
-            <h2 class="cl-red">Head Quarters Address</h2>
+            <h2 class="cl-red">HEAD QUARTERS ADDRESS</h2>
             <p>95, 26th July Avenue, Apt 803</p>
             <p>Azarita, Alexandria, Egypt</p>
         </div>
-        <a href="../contact/">
+        <a href="./contact/">
             <button type="button" class="btn btn-primary btn-sm bg-red">Message Us</button>
         </a>
         <div class="row d-flex justify-content-center align-items-center py-5">
-            <i class="sidebar-icon fab fa-facebook"></i>
+            <i class="sidebar-icon fab fa-facebook-square"></i>
             <i class="sidebar-icon fab fa-linkedin"></i>
-            <i class="sidebar-icon fab fa-instagram-square"></i>
+            <i class="sidebar-icon fab fa-instagram"></i>
         </div>
     </div>
     <div class="page-overlay"></div>
@@ -123,10 +124,6 @@
     <div class="container my-5">
         <div class="row">
 
-
-            <h4 class=" my-5">
-                Safety & Quality :
-            </h4>
             <br>
             <br>
             <p class="">
@@ -173,7 +170,7 @@
                     <div class=" d-flex justify-content-center align-items-center ">
                         <i class="sidebar-icon fab fa-facebook-square"></i>
                         <i class="sidebar-icon fab fa-linkedin"></i>
-                        <i class="sidebar-icon fab fa-instagram-square"></i>
+                        <i class="sidebar-icon fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column">
@@ -181,19 +178,19 @@
                     <a href="../services/?modal=true&id=0">
                         <small>Fourth Party Logistics</small>
                     </a>
-                    <a href="../services/?modal=true&id=0">
+                    <a href="../services/?modal=true&id=1">
                         <small>International Trade</small>
                     </a>
-                    <a href="../services/?modal=true&id=0">
+                    <a href="../services/?modal=true&id=2">
                         <small>Supply Chain Management</small>
                     </a>
-                    <a href="../services/?modal=true&id=0">
+                    <a href="../services/?modal=true&id=3">
                         <small>Logistics Solutions</small>
                     </a>
-                    <a href="../services/?modal=true&id=0">
+                    <a href="../services/?modal=true&id=4">
                         <small>Warehousing</small>
                     </a>
-                    <a href="../services/?modal=true&id=0">
+                    <a href="../services/?modal=true&id=5">
                         <small>Consultancy</small>
                     </a>
                 </div>
@@ -217,9 +214,8 @@
                 </div>
                 <div class="pt-5 col-sm-6 col-md-3 d-flex justify-content-start align-items-center flex-column">
                     <p>Working Hours</p>
-                    <small>Sunday - Thursday: 7:00 - 17:00 </small>
-                    <small>Saturday: 7:00 - 12:00</small>
-                    <small>Holidays: 8:00 - 10:00</small>
+                    <small>Sunday - Thursday: 9:00 - 16:30 </small>
+                    <small>Saturday: 10:00 - 13:00</small>
                 </div>
                 <div
                     class="pt-5 col-sm-6 col-md-3 d-flex justify-content-start align-items-center flex-column icon-small">
