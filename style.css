@@ -678,16 +678,23 @@ footer {
 }
 
 footer img {
-    width: 180px;
+    /* width: 180px; */
     margin-bottom: 30px;
+    max-width: 100%;
+    width: auto;
 }
 
 footer small {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 footer p {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+footer a {
+    font-family: 'Poppins';
+    font-size: 12px !important;
 }
 
 footer i {
@@ -714,6 +721,17 @@ footer .icon-small small {
 margin-top: 10px;
 }
 
+footer .footer-items a  {
+    display: flex;
+    justify-content: center;
+    word-wrap: normal;
+}
+
+footer .footer-items small  {
+    margin-left: auto;
+    text-align: center;
+}
+
 
 
 
@@ -724,7 +742,7 @@ margin-top: 10px;
 }
 
 .card.news {
-    width: 388px;
+    width: 100%;
     cursor: pointer;
     margin-bottom: 20px;
     border: none;
