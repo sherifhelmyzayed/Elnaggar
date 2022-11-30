@@ -166,8 +166,8 @@ h4{
 
 .nav-item h2 {
     padding-bottom: 5px;
-    margin: 0 15px;
-    font-size: 20px;
+    margin: 0 5px;
+    font-size: 18px;
 }
 
 .nav-icon {
@@ -322,6 +322,12 @@ h4{
     font-size: 40px;
     color: #F3F3F3;
     max-width: 800px;
+}
+
+@media (max-width: 767px) {
+    .hero-content p{
+        font-size: 28px;
+    }
 }
 
 .btn {
