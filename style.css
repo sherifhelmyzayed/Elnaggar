@@ -1475,6 +1475,8 @@ footer .footer-items small  {
 .team-card img {
     margin-bottom: -100px;
     z-index: 10;
+    width: 80px;
+    border-radius: 50px;
 }
 
 .team-card-content{
