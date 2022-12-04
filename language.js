@@ -5,22 +5,28 @@ const host = "5500/"
 
 
 const toggleLang = () => {
-    const language = getCookie('lang');
+    const localStore = localStorage.getItem('lang');
+    const language = localStore ? localStore : 'eng';
+
+    const url = window.location.href;
+
+    console.log(language);
+
     if (language === "eng") {
-        document.cookie = 'lang=ar;';
+        localStorage.setItem('lang', "ar");
+        const splittedUrl = url.split(host);
+        const location = splittedUrl[0] + host + 'ar/' + splittedUrl[1];
+        window.location.href = location;
     } else {
-        document.cookie = 'lang=eng;';
+        localStorage.setItem('lang', "eng");
+        const splittedUrl = url.split('ar/');
+        const location = splittedUrl[0] + splittedUrl[1];
+        window.location.href = location;
     };
 
     // load another page here
 
-    const url = window.location.href;
 
-    console.log(url);
-
-    const splittedUrl = url.split(host);
-
-    console.log(splittedUrl);
 
 
     // location.reload();
@@ -28,39 +34,21 @@ const toggleLang = () => {
 };
 
 const addLanguageText = () => {
-    const language = getCookie('lang');
+    const language = localStorage.getItem('lang');
+
     console.log(language);
-    if (language === "eng") {
-        langButtom.innerText = "Ar"
-    } else {
+    if (language === "ar") {
+        console.log("language is Arabic");
         langButtom.innerText = "Eng"
+    } else {
+        console.log("language is English");
+        langButtom.innerText = "Ar"
     }
     return
 };
 
-
-const getCookie = (name) => {
-    // Add the = sign
-    name = name + '=';
-
-    // Get the decoded cookie
-    const decodedCookie = decodeURIComponent(document.cookie);
-
-    // Get all cookies, split on ; sign
-    const cookies = decodedCookie.split(';');
-
-    // Loop over the cookies
-    for (let i = 0; i < cookies.length; i++) {
-        // Define the single cookie, and remove whitespace
-        const cookie = cookies[i].trim();
-
-        // If this cookie has the name of what we are searching
-        if (cookie.indexOf(name) == 0) {
-            // Return everything after the cookies name
-            return cookie.substring(name.length, cookie.length);
-        }
-    }
-};
-
+if (localStorage.getItem('lang') === undefined) {
+    localStorage.setItem('lang', 'eng');
+}
 
 addLanguageText();
