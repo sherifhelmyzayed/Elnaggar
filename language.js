@@ -9,9 +9,9 @@ const toggleLang = () => {
     } else {
         document.cookie = 'lang=eng;';
     }
-    location.reload()
+    location.reload();
     return
-}
+};
 
 const addLanguageText = () => {
     const language = getCookie('lang');
@@ -22,7 +22,7 @@ const addLanguageText = () => {
         langButtom.innerText = "Eng"
     }
     return
-}
+};
 
 
 const getCookie = (name) => {
@@ -46,7 +46,7 @@ const getCookie = (name) => {
             return cookie.substring(name.length, cookie.length);
         }
     }
-}
+};
 
 
-addLanguageText()
+addLanguageText();
