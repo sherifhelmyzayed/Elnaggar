@@ -1,6 +1,8 @@
 
 const langButtom = document.getElementById('lang');
 
+const host = "5500/"
+
 
 const toggleLang = () => {
     const language = getCookie('lang');
@@ -8,8 +10,20 @@ const toggleLang = () => {
         document.cookie = 'lang=ar;';
     } else {
         document.cookie = 'lang=eng;';
-    }
-    location.reload();
+    };
+
+    // load another page here
+
+    const url = window.location.href;
+
+    console.log(url);
+
+    const splittedUrl = url.split(host);
+
+    console.log(splittedUrl);
+
+
+    // location.reload();
     return
 };
 

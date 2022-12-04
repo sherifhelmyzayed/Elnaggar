@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../Assets/fav.png">
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+                <img src="../Assets/logo.png" class="mainLogo" alt="ElNaggar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" aria-current="page" href="../"><i class="bi bi-house-fill me-2"></i>
+                            <h2>Home</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red " href="../about"><i class="bi bi-people-fill me-2"></i>
+                            <h2>About Us</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../services"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Services</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../projects"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Projects</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../Media"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Media Center</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red active" href="../contact"><i class="bi bi-telephone-fill me-2"></i>
+                            <h2>Contact Us</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red">
+                            <img src="../Assets/bars.svg" class="nav-icon far fa-bars mt-3" alt="bars"
+                                onclick=openSidebar()>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red">
+                            <i class="nav-icon far fa-globe mt-3" onclick=toggleLang()></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar text-center">
+        <i class="closeBtn far fa-times-circle" onclick=closeSideBar()></i>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <img src="../Assets/logo.png" alt="logo">
+        </div>
+        <div class="row">
+            <h2 class="cl-red">WORKING HOURS</h2>
+            <P>Sunday - Thursday: 9:00 - 16:30</P>
+            <p>Saturday: 10:00 - 13:00</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">CONTACT US</h2>
+            <p>Tel: (+203) 4851778 / (+203) 4841778</p>
+            <p>Fax: (+203) 4851773</p>
+            <p>E-mail: administration@naggargroup.com</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">HEAD QUARTERS ADDRESS</h2>
+            <p>95, 26th July Avenue, Apt 803</p>
+            <p>Azarita, Alexandria, Egypt</p>
+        </div>
+        <a href="./contact/">
+            <button type="button" class="btn btn-primary btn-sm bg-red">Message Us</button>
+        </a>
+        <div class="row d-flex justify-content-center align-items-center py-5">
+            <i class="sidebar-icon fab fa-facebook-square"></i>
+            <i class="sidebar-icon fab fa-linkedin"></i>
+            <i class="sidebar-icon fab fa-instagram"></i>
+        </div>
+    </div>
+    <div class="page-overlay"></div>
+
+
+
+    <section class="about-hero">
+        <div class="container text-center d-flex justify-content-start align-items-end h-100 text-white py-5">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+
+    <section class="py-5 text-center container d-flex justify-content-center">
+        <div class="contact-form">
+            <div class="card contact">
+                <!-- <img class="card-img-top" src="./Assets/home/news-1.png" alt="Card image cap"> -->
+                <div class="card-body text-center">
+                    <h3 class="mb-5">Get In Touch With Us</h3>
+                    <form>
+                        <div class="form-row d-flex">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="number" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <textarea row="10" type="text" class="form-control" id="message"
+                                    placeholder="Message"></textarea>
+
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm bg-red">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container py-5">
+        <h3 class="text-center contact-title">Contact Details</h3>
+        <div class="row border-radius-5">
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.28397742400836!2d29.90516127379106!3d31.205664624397738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c3c06850b271%3A0x591699e007254078!2sNaggar%20Foreign%20Trade!5e0!3m2!1sen!2seg!4v1670033376037!5m2!1sen!2seg&z=15"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+            <div class="col-md-6 bg-grey d-flex justify-content-center align-items-start flex-column">
+                <h2>Head Quarters</h2>
+                <div class=" d-flex">
+                    <i class="mt-1 me-1 cl-red fas fa-map-marker-alt"></i>
+                    <p>26 July Street, Al Azarita, Alexandria, Egypt</p>
+                </div>
+                <div class="d-flex">
+                    <i class="mt-1 me-1 cl-red fas fa-phone-alt"></i>
+                    <p>(+203) 4851778 / (+203) 4841778</p>
+                </div>
+                <div class="d-flex">
+                    <i class="mt-1 me-1 cl-red fas fa-fax"></i>
+                    <p>(+203) 4851773</p>
+                </div>
+                <div class="d-flex">
+                    <i class="mt-1 me-1 cl-red fas fa-envelope"></i>
+                    <p>administration@naggargroup.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <img src="../Assets/contact/samah.jpg" alt="profile">
+                        <div class="team-card-content">
+                            <h2>Samah Ismaeil</h2>
+                            <p>Business Development Manager</p>
+                            <a
+                                href="mailto: samah.ismaeil@naggarforeigntrade.com">samah.ismaeil@naggarforeigntrade.com</a>
+                            <p class="cl-red">(+203) 4851778 / (+203) 4841778 - EXT.103</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <img src="../Assets/contact/sherif.jpg" alt="profile">
+                        <div class="team-card-content">
+                            <h2>Shreef H. Salama</h2>
+                            <p>Head of operations/Logistics Manager</p>
+                            <a
+                                href="mailto: shreef.salama@naggarforeigntrade.com">shreef.salama@naggarforeigntrade.com</a>
+                            <p class="cl-red">(+203) 4851778 / (+203) 4841778 - EXT.104</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <img src="../Assets/contact/profile.png" alt="profile">
+                        <div class="team-card-content">
+                            <h2>Alaa Mohamed</h2>
+                            <p>Finance Manager</p>
+                            <a
+                                href="mailto: alaa.mohamed@naggarforeigntrade.com">alaa.mohamed@naggarforeigntrade.com</a>
+                            <p class="cl-red">(+203) 4851778 / (+203) 4841778 - EXT.111</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-center align-items-center pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="../Assets/logo-white.png" alt="logo">
+                    <div class=" d-flex justify-content-center align-items-center ">
+                        <i class="sidebar-icon fab fa-facebook-square"></i>
+                        <i class="sidebar-icon fab fa-linkedin"></i>
+                        <i class="sidebar-icon fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div
+                    class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column footer-items">
+                    <p>Service</p>
+                    <a href="../services/?modal=true&id=0">
+                        <small>Fourth Party Logistics</small>
+                    </a>
+                    <a href="../services/?modal=true&id=1">
+                        <small>International Trade</small>
+                    </a>
+                    <a href="../services/?modal=true&id=2">
+                        <small>Supply Chain </small>
+                    </a>
+                    <a href="./services/?modal=true&id=3">
+                        <small>Logistics Solutions</small>
+                    </a>
+                    <a href="../services/?modal=true&id=4">
+                        <small>Warehousing</small>
+                    </a>
+                    <a href="../services/?modal=true&id=5">
+                        <small>Consultancy</small>
+                    </a>
+                </div>
+                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column">
+                    <p>Quick Links</p>
+                    <a href="../about/#history">
+                        <small>NFT History</small>
+                    </a>
+                    <a href="../about/#future">
+                        <small>NFT Future Strategy</small>
+                    </a>
+                    <a href="../about/#faq">
+                        <small>FAQ's</small>
+                    </a>
+                    <a href="../governance-transparency">
+                        <small>Governance & <br> Transparency</small>
+                    </a>
+                    <a href="../safety-quality">
+                        <small>Safety & Quality</small>
+                    </a>
+                </div>
+                <div class="pt-5 col-sm-6 col-md-2 d-flex justify-content-start align-items-center flex-column">
+                    <p>Working Hours</p>
+                    <small>Sunday - Thursday:
+                    </small>
+                    <small>
+                        9:00 - 16:30
+                    </small>
+                    <small>Saturday:
+                    </small>
+                    <small>
+                        10:00 - 13:00
+                    </small>
+                </div>
+                <div
+                    class="pt-5 col-sm-6 col-md-4 d-flex justify-content-start align-items-center flex-column icon-small">
+                    <p>Contact Us</p>
+                    <div class="d-flex align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-phone-alt"></i>
+
+                            (+203) 4851778 / (+203) 4841778
+                        </small>
+                    </div>
+                    <div class="d-flex  align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-fax"></i>
+
+                            (+203) 4851773
+                        </small>
+                    </div>
+                    <div class="d-flex align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-envelope"></i>
+                            <a href="mailto: samah.ismaeil@naggarforeigntrade.com">
+                                administration@naggarforeigntrade.com
+                            </a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

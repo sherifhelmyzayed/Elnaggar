@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../style.css">
+    <title>Media Center</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Assets/fav.png">
+    <link rel="icon" type="image/x-icon" href="../Assets/fav.png">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">
+                <img src="../Assets/logo.png" class="mainLogo" alt="ElNaggar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" aria-current="page" href="../"><i class="bi bi-house-fill me-2"></i>
+                            <h2>Home</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../about"><i class="bi bi-people-fill me-2"></i>
+                            <h2>About Us</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red " href="../services"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Services</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../projects"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Projects</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red active" href="../Media"><i class="bi bi-people-fill me-2"></i>
+                            <h2>Media Center</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" href="../contact"><i class="bi bi-telephone-fill me-2"></i>
+                            <h2>Contact Us</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red">
+                            <img src="../Assets/bars.svg" class="nav-icon far fa-bars mt-3" alt="bars"
+                                onclick=openSidebar()>
+                        </a>
+                    </li>
+                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
+                        <a class="nav-link cl-red">
+                            <i class="nav-icon far fa-globe mt-3" onclick=toggleLang()></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar text-center">
+        <i class="closeBtn far fa-times-circle" onclick=closeSideBar()></i>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <img src="../Assets/logo.png" alt="logo">
+        </div>
+        <div class="row">
+            <h2 class="cl-red">WORKING HOURS</h2>
+            <P>Sunday - Thursday: 9:00 - 16:30</P>
+            <p>Saturday: 10:00 - 13:00</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">CONTACT US</h2>
+            <p>Tel: (+203) 4851778 / (+203) 4841778</p>
+            <p>Fax: (+203) 4851773</p>
+            <p>E-mail: administration@naggargroup.com</p>
+        </div>
+        <div class="row">
+            <h2 class="cl-red">HEAD QUARTERS ADDRESS</h2>
+            <p>95, 26th July Avenue, Apt 803</p>
+            <p>Azarita, Alexandria, Egypt</p>
+        </div>
+        <a href="./contact/">
+            <button type="button" class="btn btn-primary btn-sm bg-red">Message Us</button>
+        </a>
+        <div class="row d-flex justify-content-center align-items-center py-5">
+            <i class="sidebar-icon fab fa-facebook-square"></i>
+            <i class="sidebar-icon fab fa-linkedin"></i>
+            <i class="sidebar-icon fab fa-instagram"></i>
+        </div>
+    </div>
+    <div class="page-overlay"></div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog media-modal">
+            <div class="modal-content" id="modal-content">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="about-hero">
+        <div class="container text-center d-flex justify-content-start align-items-end h-100 text-white py-5">
+            <h1>Media Center</h1>
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center align-items-center py-5">
+
+        <div class="btn-group wide" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="true"
+                onclick=showGallery()>
+            <label class="btn btn-outline-primary" for="btnradio1">Gallery</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick=showNews()>
+            <label class="btn btn-outline-primary" for="btnradio2">Articles</label>
+        </div>
+    </div>
+
+    <div class="galleryNewsContainer container">
+        <div id="gallery" class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(1) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(2) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(3) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(4) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-4.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(5) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-5.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(6) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-6.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(7) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-7.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(8) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-8.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(9) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-9.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(10) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-10.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(11) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-11.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(12) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-12.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(13) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-13.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(14) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-14.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a onclick=setModal(15) data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../Assets/media/media-15.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="news" class="container">
+            <div class="row">
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Central Bank of Egypt approves procedures facilitating import/export
+                                transactions</p>
+                            <p class="card-text-date">September 20, 2022</p>
+                            <a href="https://english.ahram.org.eg/News/476419.aspx" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Egypt extends deadline to register for cargo tracking system at
+                                airports to 1 Jan. 2023</p>
+                            <p class="card-text-date">September 20, 2022</p>
+                            <a href="https://english.ahram.org.eg/News/476401.aspx" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-3.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Finance minister unveils regulations on reduced customs tariffs</p>
+                            <p class="card-text-date">September 4, 2022</p>
+                            <a href="https://english.ahram.org.eg/News/475414.aspx" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-4.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Action on imports</p>
+                            <p class="card-text-date">September 9, 2022</p>
+                            <a href="https://english.ahram.org.eg/News/475600.aspx " target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-5.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Egypt approves exceptional measures to ease releasing imports</p>
+                            <p class="card-text-date">August 30, 2022</p>
+                            <a href="https://english.ahram.org.eg/News/474099.aspx" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-md-4 mb-5">
+                    <div class="card news">
+                        <img class="card-img-top" src="../Assets/home/news-6.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">CBE issues new decisions, controls to regulate import operations, cash
+                                deposits in foreign currencies</p>
+                            <p class="card-text-date">September 21, 2022</p>
+                            <a href="https://dailynewsegypt.com/2022/09/21/cbe-issues-new-decisions-controls-to-regulate-import-operations-cash-deposits-in-foreign-currencies/"
+                                target="_blank" rel="noopener noreferrer">
+                                <div class="row d-flex justify-content-end">
+                                    <p class="card-action">Read More</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="d-flex justify-content-center align-items-center pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="../Assets/logo-white.png" alt="logo">
+                    <div class=" d-flex justify-content-center align-items-center ">
+                        <i class="sidebar-icon fab fa-facebook-square"></i>
+                        <i class="sidebar-icon fab fa-linkedin"></i>
+                        <i class="sidebar-icon fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column footer-items">
+                    <p>Service</p>
+                    <a href="../services/?modal=true&id=0">
+                        <small>Fourth Party Logistics</small>
+                    </a>
+                    <a href="../services/?modal=true&id=1">
+                        <small>International Trade</small>
+                    </a>
+                    <a href="../services/?modal=true&id=2">
+                        <small>Supply Chain </small>
+                    </a>
+                    <a href="./services/?modal=true&id=3">
+                        <small>Logistics Solutions</small>
+                    </a>
+                    <a href="../services/?modal=true&id=4">
+                        <small>Warehousing</small>
+                    </a>
+                    <a href="../services/?modal=true&id=5">
+                        <small>Consultancy</small>
+                    </a>
+                </div>
+                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column">
+                    <p>Quick Links</p>
+                    <a href="../about/#history">
+                        <small>NFT History</small>
+                    </a>
+                    <a href="../about/#future">
+                        <small>NFT Future Strategy</small>
+                    </a>
+                    <a href="../about/#faq">
+                        <small>FAQ's</small>
+                    </a>
+                    <a href="../governance-transparency">
+                        <small>Governance & <br> Transparency</small>
+                    </a>
+                    <a href="../safety-quality">
+                        <small>Safety & Quality</small>
+                    </a>
+                </div>
+                <div class="pt-5 col-sm-6 col-md-2 d-flex justify-content-start align-items-center flex-column">
+                    <p>Working Hours</p>
+                    <small>Sunday - Thursday:
+                    </small>
+                    <small>
+                        9:00 - 16:30
+                    </small>
+                    <small>Saturday:
+                    </small>
+                    <small>
+                        10:00 - 13:00
+                    </small>
+                </div>
+                <div
+                    class="pt-5 col-sm-6 col-md-4 d-flex justify-content-start align-items-center flex-column icon-small">
+                    <p>Contact Us</p>
+                    <div class="d-flex align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-phone-alt"></i>
+
+                            (+203) 4851778 / (+203) 4841778
+                        </small>
+                    </div>
+                    <div class="d-flex  align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-fax"></i>
+
+                            (+203) 4851773
+                        </small>
+                    </div>
+                    <div class="d-flex align-self-start">
+                        <small>
+                            <i class="mt-1 me-1 fas fa-envelope"></i>
+                            <a href="mailto: samah.ismaeil@naggarforeigntrade.com">
+                                administration@naggarforeigntrade.com
+                            </a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
