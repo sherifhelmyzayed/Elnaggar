@@ -73,9 +73,10 @@
                                 onclick=openSidebar()>
                         </a>
                     </li>
-                    <li class="nav-item rounded d-flex justify-content-center align-items-center">
-                        <a class="nav-link cl-red">
-                            <i class="nav-icon far fa-globe mt-3" onclick=toggleLang()></i>
+                    <li class="nav-item rounded">
+                        <a class="nav-link cl-red" onclick=toggleLang()>
+                            <i class="bi bi-people-fill me-2"></i>
+                            <h2 id="lang"></h2>
                         </a>
                     </li>
                 </ul>
@@ -731,7 +732,8 @@
                         <i class="sidebar-icon fab fa-instagram"></i>
                     </div>
                 </div>
-                <div class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column footer-items">
+                <div
+                    class="pt-5 col-sm-4 col-md-2 d-flex justify-content-start align-items-center flex-column footer-items">
                     <p>Service</p>
                     <a href="./services/?modal=true&id=0">
                         <small>Fourth Party Logistics</small>
@@ -869,6 +871,10 @@
 
         });
     </script>
+
+    <script src="./language.js"></script>
+
+
 
 </body>
 

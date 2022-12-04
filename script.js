@@ -66,7 +66,3 @@ const hoverLeave = () => {
 
 }
 
-
-const toggleLang = () => {
-    return
-}
