@@ -24,14 +24,6 @@ const addLanguageText = () => {
     return
 }
 
-const checkLanInCookie = () => {
-    const language = getCookie('lang');
-    if (language) {
-        displayLang(language);
-        return
-    }
-    displayLang("eng")
-}
 
 const getCookie = (name) => {
     // Add the = sign
@@ -56,9 +48,6 @@ const getCookie = (name) => {
     }
 }
 
-const displayLang = ()=> {
-    return
-}
 
 addLanguageText()
 checkLanInCookie()
