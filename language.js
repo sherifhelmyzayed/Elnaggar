@@ -50,4 +50,3 @@ const getCookie = (name) => {
 
 
 addLanguageText()
-checkLanInCookie()
