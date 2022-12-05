@@ -481,79 +481,6 @@ h4{
 }
 
 
-
-
-
-
-
-
-
-/* 
-
-Multiple Slider
-
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
-    }
-
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-    transform: translateX(0);
-}
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section-project {
     background:  url('./Assets/home/background-project.png') rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -562,18 +489,6 @@ Multiple Slider
 
 }
 
-/* .section-project::after{
-    height: 100%;
-    width: 100%;
-    background-image: url('./Assets/home/background-project-overlay.png');
-    background-size: cover;
-    content: "";
-    top: 0;
-    left: 0;
-    position: absolute;
-    opacity: 0.85;
-    z-index: -1;
-} */
 
 .section-project .container {
     z-index: 2 !important;
