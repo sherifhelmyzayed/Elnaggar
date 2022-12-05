@@ -1531,3 +1531,7 @@ footer .footer-items small  {
 .media-modal .modal-content {
     background-color: rgba(0, 0, 0, 0.0);
 }
+
+#lang {
+    cursor: pointer;
+}
