@@ -7,7 +7,6 @@ const host = "5500/"
 const toggleLang = () => {
     const localStore = localStorage.getItem('lang');
     const language = localStore ? localStore : 'eng';
-
     const url = window.location.href;
 
     console.log(language);
@@ -23,13 +22,6 @@ const toggleLang = () => {
         const location = splittedUrl[0] + splittedUrl[1];
         window.location.href = location;
     };
-
-    // load another page here
-
-
-
-
-    // location.reload();
     return
 };
 
