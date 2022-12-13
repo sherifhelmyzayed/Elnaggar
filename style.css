@@ -1354,7 +1354,7 @@ footer .footer-items small  {
 
 .project-card-text-hidden ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: red; /* Change the color */
+    color: #AA1F24; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */ 
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -1388,10 +1388,10 @@ footer .footer-items small  {
 }
 
 .team-card img {
-    margin-bottom: -100px;
+    margin-bottom: -90px;
     z-index: 10;
-    width: 80px;
-    border-radius: 50px;
+    width: 150px;
+    border-radius: 120px;
 }
 
 .team-card-content{
@@ -1403,6 +1403,10 @@ footer .footer-items small  {
     flex-direction: column;
     padding: 100px 10px 10px 10px;
     z-index: 2;
+}
+
+.team-card-content h2{
+    margin: 0;
 }
 
 
