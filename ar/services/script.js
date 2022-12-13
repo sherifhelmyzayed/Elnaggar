@@ -7,43 +7,43 @@ const modal1 = `
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
         <img class="svg" src="../Assets/home/mini-grid-svg-1.png" alt="">
-        <h2>Fourth Party Logistics</h2>
+        <h2>لوجيستيات طرف رابع		</h2>
     </div>
 </div>
 <div class="modal-ul">
     <ul class="mt-1 ml-5 ">
         <li>
-            Freight sourcing strategies
+        استراتيجيات مصادر الشحن
         </li>
         <li>
-            Logistics
+        اللوجستيات
         </li>
         <li>
-            Analysis of transportation expenses
+        تحليل مصاريف النقل 
         </li>
         <li>
-            Analysis of carrier performance
+        تحليل أداء الناقل 
         </li>
         <li>
-            Effective 3PL management
+        إدارة PL3 فعالة
         </li>
         <li>
-            Business planning
+        تخطيط الأعمال 
         </li>
         <li>
-            Project management
+        إدارة المشروع 
         </li>
         <li>
-            Management of inbound, outbound, and reverse logistics
+        إدارة الخدمات اللوجستية الواردة و الصادرة و العكسية
         </li>
         <li>
-            Coordination of a wide supplier base
+        تنسيق قاعدة واسعة من الموردين 
         </li>
         <li>
-            Network analysis and designs
+        تحليل و تصميم الشبكة
         </li>
         <li>
-            Inventory planning and management
+        تخطيط و ادارة المخزون
         </li>
     </ul>
 </div>
@@ -58,12 +58,13 @@ const modal2 = `
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
         <img class="svg" src="../Assets/home/mini-grid-svg-2.png" alt="">
-        <h2>International Trade</h2>
+        <h2>التجارة الدولية</h2>
     </div>
 </div>
 <div class="modal-text">
-    <p>We offer a full package of services concerning all the types international trade
-        transactions, whether import, export, or crossing neutral countries.</p>
+    <p>نقدم مجموعة كاملة من الخدمات فيما يتعلق بجميع أنواع المعاملات التجارية الدولية سواء استيراد أو تصدير
+    أو عبور دول محايدة.
+    </p>
 </div>
 </div>
 `
@@ -75,13 +76,14 @@ const modal3 = `
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
         <img class="svg" src="../Assets/home/mini-grid-svg-3.png" alt="">
-        <h2>Supply Chain Management</h2>
+        <h2>إدارة سلسلة الإمدادات</h2>
     </div>
 </div>
 <div class="modal-text">
     <p>
-        We have full awareness with all the needs of an outsourced supply chain management from
-        Planning, Procurement, Purchasing, Logistics and Warehousing.
+    لدينا وعي كامل بجميع احتياجات إدارة سلسلة التوريد الخارجية من التخطيط والمشتريات والخدمات
+    اللوجستية والتخزين
+    .
     </p>
 </div>
 </div>
@@ -95,32 +97,30 @@ const modal4 = `
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
         <img class="svg" src="../Assets/home/mini-grid-svg-4.png" alt="">
-        <h2>Logistics Solutions</h2>
+        <h2>الحلول اللوجستية</h2>
     </div>
 </div>
 <div class="modal-ul">
     <ul class="mt-1 ml-5 ">
         <li>
-            Shipping and Freighting:
+        الشحن :
         </li>
         <p>
-            We provide outsourced and offshore services based on trusted freight forwarding
-            partners.
+        نقدم خدمات الاستعانة بمصادر خارجية ومن الغير على أساس شركاء الشحن الموثوق بهم.
         </p>
         <li>
-            Haulage/Transportation:
+        النقل:
         </li>
         <p>
-            We aim for domestic and non-domestic haulage solutions using our in-house and outsourced
-            fleet.
+        نحن نهدف إلى توفير حلول النقل المحلي وغير المحلي باستخدام أسطولنا الداخلي والخارجي
         </p>
         <li>
-            Customs Clearance:
+        التخليص الجمركي:
         </li>
         <p>
-            Our Customs Clearance service providers allow us to have a full coverage of all the
-            Egyptian Seaports and Airports, in addition to a network agents worldwide to provide
-            Clearance Services in foreign countries under different delivery terms.
+        يتيح لنا مقدمو خدمات التخليص الجمركي لدينا تغطية كاملة لجميع الموانئ البحرية والمطارات المصرية , بالإضافة إلى شبكة من الوكلاء في جميع أنحاء العالم لتقديم خدمات التخليص الجمركي في
+        الدول الأجنبية بشروط تسليم مختلفة
+        
         </p>
     </ul>
 </div>
@@ -134,14 +134,12 @@ const modal5 = `
 <div class="d-flex justify-content-center align-items-center">
     <div class="d-flex justify-content-center align-items-center modal-services">
         <img class="svg" src="../Assets/home/mini-grid-svg-5.png" alt="">
-        <h2>Warehousing</h2>
+        <h2>التخزين</h2>
     </div>
 </div>
 <div class="modal-text">
     <p>
-        Our fully equipped warehouse within an extent of 1800 square meters at the outer area of
-        Alexandria can offer all activities of warehousing, offloading, loading, packing and
-        consolidation for all types of cargos and commodities.
+    يمكن مستودعاتنا المجهزة بالكامل على مساحة ١٨٠٠ متر مربع في المنطقة الخارجية للإسكندرية أن تقدم جميع أنشطة التخزين والتفريغ والتحميل والتعبئة والتجميع لجميع أنواع البضائع والسلع
     </p>
 </div>
 </div>
