@@ -9,8 +9,6 @@ const toggleLang = () => {
     const language = localStore ? localStore : 'eng';
     const url = window.location.href;
 
-    console.log(language);
-
     if (language === "eng") {
         localStorage.setItem('lang', "ar");
         const splittedUrl = url.split(host);
@@ -28,12 +26,9 @@ const toggleLang = () => {
 const addLanguageText = () => {
     const language = localStorage.getItem('lang');
 
-    console.log(language);
     if (language === "ar") {
-        console.log("language is Arabic");
         langButtom.innerText = "Eng"
     } else {
-        console.log("language is English");
         langButtom.innerText = "Ar"
     }
     return
