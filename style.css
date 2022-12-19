@@ -1454,3 +1454,7 @@ footer .footer-items small  {
 #lang {
     cursor: pointer;
 }
+
+.inlineNew{
+    width: auto;
+}
