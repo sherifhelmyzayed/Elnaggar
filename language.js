@@ -1,7 +1,9 @@
 
 const langButtom = document.getElementById('lang');
 
-const host = "5500/"
+const host = window.location.href.includes(".com") ? ".com/" : "5500/"
+
+console.log(window.location.href.includes(".com"));
 
 
 const toggleLang = () => {
